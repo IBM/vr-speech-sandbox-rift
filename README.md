@@ -8,7 +8,13 @@ When the reader has completed this journey, they will understand how to:
 
 * Add IBM Watson Speech-to-Text and Conversation to a Virtual Reality environment build in Unity.
 
+## Flow
 ![](doc/source/images/architecture.png)
+
+1. User interacts in virtual reality and gives voice commands such as "Create a large black box".
+2. The Oculus Rift Headset microphone picks up the voice command and the running application sends it to Watson Speech-to-Text.
+3. Watson Speech-to-Text converts the audio to text and returns it to the running Application that powers the Oculus Rift.
+4. The application sends the text to Watson Conversation. Watson conversation returns the recognized intent "Create" and the entities "large", "black", and "box". The virtual reality application then displays the large black box (which falls from the sky).
 
 ### With Watson
 
