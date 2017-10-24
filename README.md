@@ -1,13 +1,8 @@
-#WORK IN PROGRESS - DO NOT USE - UNTESTED - DANGEROUS - WARNING
-# This is a port in progress, and not ready for general use. Please keep a watch on this page for the complete journey code soon.
-
 # Create voice commands for VR experiences with Watson services
-
-*Read this in other languages: [한국어](README-ko.md).*
 
 In this developer journey we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) services.
 
-In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [400 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
+In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The Oculus Rift is the 4th most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [355 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
 
 When the reader has completed this journey, they will understand how to:
 
@@ -38,7 +33,7 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 
 * [IBM Bluemix Account](http://ibm.biz/Bdimr6)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
-* [HTC Vive](https://www.vive.com/us/product/)
+* [Oculus Rift](https://www.oculus.com)
 * [SteamVR](http://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
 * [Blender](https://www.blender.org/)
@@ -82,14 +77,9 @@ $ git checkout tags/0.13.0
 11. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
 12. Press Play
 
-# Sample output
-
-[![](http://img.youtube.com/vi/FlMvLDw6cYc/0.jpg)](http://www.youtube.com/watch?v=FlMvLDw6cYc)
-
 # Links
 
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
-* [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca)
 * [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
 * [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
