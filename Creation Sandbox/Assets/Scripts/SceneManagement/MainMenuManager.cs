@@ -51,11 +51,6 @@ public class MainMenuManager : GameManager {
         LoadSandbox();
     }
 
-    public void ContinuePressed()
-    {
-        LoadSandbox();
-    }
-
     public void TutorialPressed()
     {
         LoadTutorial();
