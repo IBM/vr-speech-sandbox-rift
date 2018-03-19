@@ -27,7 +27,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Unity](https://unity3d.com/): A cross-platform game engine used to develop video games for PC, consoles, mobile devices and websites.
 
 # Watch the Video
-[![](https://i.ytimg.com/vi/o-OQc-hHtoU/0.jpg)](https://youtu.be/o-OQc-hHtoU)
+[![](https://i.ytimg.com/vi/h5nY3st62Qg/hqdefault.jpg)](https://youtu.be/h5nY3st62Qg)
 
 # Steps
 
@@ -89,6 +89,7 @@ If you followed the previous steps you should already be inside your local clone
 
 # Links
 
+* [Youtube Video](https://youtu.be/h5nY3st62Qg)
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
 * [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
 * [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
