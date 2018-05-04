@@ -27,7 +27,7 @@ using IBM.Watson.DeveloperCloud.Services.Conversation.v1;
 using FullSerializer;
 using IBM.Watson.DeveloperCloud.Connection;
 
-public class ExampleStreaming : MonoBehaviour
+public class SpeechSandboxStreaming : MonoBehaviour
 {
   
     public GameManager gameManager;
@@ -38,14 +38,22 @@ public class ExampleStreaming : MonoBehaviour
 
     [SerializeField]
     private fsSerializer _serializer = new fsSerializer();
+    private SpeechToText _speechToText;
+    private Conversation _conversation;
+
     private string stt_username = "";
     private string stt_password = "";
+    // Change stt_url if different from below
     private string stt_url = "https://stream.watsonplatform.net/speech-to-text/api";
-
+     
     private string convo_username = "";
     private string convo_password = "";
+    // Change convo_url if different from below
     private string convo_url = "https://gateway.watsonplatform.net/conversation/api";
- 
+    // Change  _conversationVersionDate if different from below
+    private string _conversationVersionDate = "2017-05-26";
+    private string convo_workspaceId = "";
+
     public Text ResultsField;
 
     private int _recordingRoutine = 0;
@@ -54,11 +62,7 @@ public class ExampleStreaming : MonoBehaviour
     private int _recordingBufferSize = 1;
     private int _recordingHZ = 22050;
 
-    private SpeechToText _speechToText;
-    private Conversation _conversation;
-    private string _conversationVersionDate = "2017-05-26";
-    private string convo_workspaceId = "";
-
+   
     void Start()
     {
         LogSystem.InstallDefaultReactors();
@@ -192,7 +196,7 @@ public class ExampleStreaming : MonoBehaviour
         yield break;
     }
 
-    private void OnRecognize(SpeechRecognitionEvent result)
+    private void OnRecognize(SpeechRecognitionEvent result, Dictionary<string, object> customData = null)
     {
         if (result != null && result.results.Length > 0)
         {
@@ -304,7 +308,7 @@ public class ExampleStreaming : MonoBehaviour
         }
     }
 
-    private void OnRecognizeSpeaker(SpeakerRecognitionEvent result)
+    private void OnRecognizeSpeaker(SpeakerRecognitionEvent result, Dictionary<string, object> customData = null)
     {
         if (result != null)
         {
