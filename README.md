@@ -88,8 +88,8 @@ If you followed the previous steps you should already be inside your local clone
 ```
 
 10. Install [Blender](https://www.blender.org)
-11. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
-12. Press Play
+11. In the `Unity editor project` tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
+12. Press `Play`
 
 # Links
 
