@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: db1b9d7e1dce3e5469836bcbdfb368e7
-timeCreated: 1518817554
-licenseType: Pro
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gameManager: {fileID: 114000010468228526, guid: 8e4c0e3336393df49b530689234c5d59,
+      type: 2}
+  - sorryClip: {instanceID: 0}
+  - saveCredentials: {fileID: 114997243982590918, guid: 9a5bf1221f2a52d4e91d66080e5b95ea,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
