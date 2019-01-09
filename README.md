@@ -96,8 +96,6 @@ Make sure you are on the develop branch.
 
 * [Youtube Video](https://youtu.be/h5nY3st62Qg)
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
-* [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
-* [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
 
 # Learn more
