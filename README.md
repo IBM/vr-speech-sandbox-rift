@@ -6,7 +6,7 @@
 
 In this Code Pattern we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Assistant](https://www.ibm.com/watson/developercloud/conversation.html) services.
 
-In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The Oculus Rift is the 4th most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [355 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
+In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The Oculus Rift is the 4th most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [355 thousand units](https://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
@@ -41,10 +41,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## 1. Before You Begin
 
-* [IBM Cloud Account](http://ibm.biz/Bdimr6)
+* [IBM Cloud Account](https://cloud.ibm.com/registration/)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
 * [Oculus Rift](https://www.oculus.com)
-* [SteamVR](http://store.steampowered.com/steamvr)
+* [SteamVR](https://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
 * [Blender](https://www.blender.org/)
 
@@ -54,10 +54,10 @@ On your local machine:
 1. `git clone https://github.com/IBM/vr-speech-sandbox-rift.git`
 2. `cd vr-speech-sandbox-rift`
 
-In [IBM Cloud](https://console.ng.bluemix.net/):
+In [IBM Cloud](https://cloud.ibm.com):
 
-1. Create a [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) service instance.
-2. Create an [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
+1. Create a [Speech-To-Text](https://cloud.ibm.com/catalog/speech-to-text/) service instance.
+2. Create an [Assistant](https://cloud.ibm.com/catalog/services/conversation/) service instance.
 3. Once you see the services in the Dashboard, select the Assistant service you created and click the !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true) button.
 4. After logging into the Assistant Tool, click the !["Import"](/doc/source/images/import_icon.png?raw=true) button.
 5. Import the Assistant [`workspace.json`](data/workspace.json) file located in your clone of this repository.
@@ -77,10 +77,10 @@ Make sure you are on the develop branch.
 1. Navigate to where you cloned this repository and open the "Creation Sandbox" directory.
 1. If prompted to upgrade the project to a newer Unity version, do so.
 1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Watson Assistant services and find their credentials (using [IBM Cloud](https://console.ng.bluemix.net/)).
+1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Watson Assistant services and find their credentials (using [IBM Cloud](https://cloud.ibm.com)).
  You can find your workspace ID by selecting the expansion menu on your assistant workspace and selecting `View details`.
 
-    ![View Details Location](https://github.com/IBM/pattern-images/blob/master/watson-assistant/GetAssistantDetails.png)
+    ![View Details Location](https://github.com/IBM/pattern-utils/blob/master/watson-assistant/GetAssistantDetails.png)
 
 1. In the Unity Hierarchy view, click on `_Scenes`->`MainGame`->`MainMenu` and then the `SaveCredentials` object.
 1. In the Inspector you will see Variables for `Speech To Text` and `Watson Assistant` and either `CF Authentication` for the Cloud Foundry username and password, or the `IAM Authentication` if you have the IAM apikey. Since you only have only one version of these credentials, fill out only one of the two for each service.
@@ -100,12 +100,12 @@ Make sure you are on the develop branch.
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
